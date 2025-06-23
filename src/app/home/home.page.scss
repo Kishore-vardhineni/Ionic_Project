@@ -25,3 +25,26 @@
 #container a {
   text-decoration: none;
 }
+
+.header-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+   width: 12%;
+   height: auto;
+}
+
+.logo-text {
+  position: absolute;
+  margin: 10px;
+}
+
+.toolbar-title {
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: auto;
+}

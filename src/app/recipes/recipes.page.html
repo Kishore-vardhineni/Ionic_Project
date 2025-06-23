@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Recipes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    <ion-item size-md="6" offset-md="3" *ngFor="let recipe of recipes" [routerLink]="['/recipes', recipe.id]">
+       <ion-avatar slot="start">
+         <ion-img [src]="recipe.imageUrl"></ion-img>
+       </ion-avatar>
+       <ion-label>{{ recipe.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Recipes work</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+</ion-content>
