@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
    {
     path: '',
-    redirectTo: 'places',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -26,11 +26,11 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-    loadComponent: () => import('./login/login-routing.module').then( m => m.LoginRoutingModule)
+    loadChildren: () => import('./login/login-routing.module').then( m => m.LoginRoutingModule)
   },
   {
     path: 'register',
-    loadComponent: () => import('./register/register-routing.module').then( m => m.RegisterRoutingModule)
+    loadChildren: () => import('./register/register-routing.module').then( m => m.RegisterRoutingModule)
   }
 
 

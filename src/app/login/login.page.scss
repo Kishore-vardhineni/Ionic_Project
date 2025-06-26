@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; // 50/50 split
+  height: 100vh;
+  width: 100%;
+}
+
+.left-side {
+  width: 100%;
+  height: 100%;
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Covers fully without distortion */
+  display: block;
+}
+
+.right-side {
+  display: grid;
+  place-items: top;
+  background-color: white; 
+  color: #111;
+  text-align: center;
+  padding: 2rem;
+}
+
+.text-box h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-box p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.small-input {
+  --padding-top: 4px;
+  --padding-bottom: 4px;
+  --padding-start: 8px;
+  --padding-end: 8px;
+
+  --border-radius: 6px;
+  --highlight-height: 1px;
+
+  font-size: 14px; /* adjusts label and value text size */
+  height: 36px;     /* controls ion-input height */
+
+  ion-label {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
